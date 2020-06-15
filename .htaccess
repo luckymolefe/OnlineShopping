@@ -1,0 +1,5 @@
+Options +FollowSymlinks
+
+RewriteEngine On
+
+RewriteRule ^payment/([0-9_-]+)$  confirmOrder.php?payment=$1 [NC,L]
